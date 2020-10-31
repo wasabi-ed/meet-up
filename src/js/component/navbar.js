@@ -1,17 +1,19 @@
 import React from "react";
+import rigoImage from "../../img/rigo-baby.jpg";
+import "../../styles/home.scss";
 import { Link } from "react-router-dom";
+// import { Details } from "../views/Details";
 
-export const Navbar = () => {
-	return (
-		<nav className="navbar navbar-light bg-light mb-3">
+export const Navbar = () => (
+	<div className="jumbotron text-center bg-dark">
+		<div className="mr-auto">
 			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+				<img src={rigoImage} className="card-img" alt="..." />
 			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
-			</div>
-		</nav>
-	);
-};
+		</div>
+		<h1 className="text-light">The Meetup Clone</h1>
+		<p className="text-light">
+			This is a mini project created by <a href="http://www.4geeksacademy.com">Catherine David Edward</a>
+		</p>
+	</div>
+);

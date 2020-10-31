@@ -1,3 +1,15 @@
-/* 
-    General Styles
-*/
+@import "~bootstrap/scss/bootstrap.scss";
+.card{
+    width: 35rem;
+}
+
+
+.card-img {
+    width: 10%;
+}
+
+.row {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}

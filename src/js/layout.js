@@ -2,14 +2,17 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import { Home } from "./views/home";
+// import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
+import { More } from "./views/More";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-
+import { Details } from "./views/Details";
+import { Events } from "./views/Events";
+import { Group } from "./views/Group";
 //create your first component
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -23,16 +26,17 @@ const Layout = () => {
 					<Navbar />
 					<Switch>
 						<Route exact path="/">
-							<Home />
+							<div className="card-rows">
+								<div>
+									<Events />
+								</div>
+							</div>
 						</Route>
-						<Route exact path="/demo">
-							<Demo />
+						<Route exact path="/group">
+							<Group />
 						</Route>
-						<Route exact path="/single/:theid">
-							<Single />
-						</Route>
-						<Route>
-							<h1>Not found!</h1>
+						<Route exact path="/more">
+							<More />
 						</Route>
 					</Switch>
 					<Footer />
