@@ -7,6 +7,7 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 import { More } from "./views/More";
+import { Jumbotron } from "./component/Jumbotron";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -25,6 +26,9 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
+                        <Route exact path="/">
+							<Home />
+						</Route>
 						<Route exact path="/">
 							<div className="card-rows">
 								<div>
