@@ -19,7 +19,7 @@ export function Details(props) {
 					</p>
 					<Link to="/more">{props.event} </Link>
 					<p>
-						<Link to="/group">something</Link>
+						<Link to="/group">Group 1</Link>
 					</p>
 				</li>
 			</ul>
