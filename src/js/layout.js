@@ -9,12 +9,11 @@ import injectContext from "./store/appContext";
 import { More } from "./views/More";
 import { Jumbotron } from "./component/Jumbotron";
 
-// import { Navbar } from "./component/navbar";
+import { NavBar } from "./component/NavBar";
 import { Footer } from "./component/footer";
 import { Details } from "./views/Details";
 import { Events } from "./views/Events";
 import { Group } from "./views/Group";
-import { NavBar } from "./component/NavBar";
 //create your first component
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -29,7 +28,9 @@ const Layout = () => {
 					<Switch>
 						<Route exact path="/">
 							<div className="card-rows">
-								<Events />
+								<div>
+									<Events />
+								</div>
 							</div>
 						</Route>
 						<Route exact path="/group">

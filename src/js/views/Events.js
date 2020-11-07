@@ -13,7 +13,7 @@ export function Events() {
 	return (
 		<div>
 			<Jumbotron />
-			<div className="row">
+			<div className="row col-md-4 m-auto">
 				{dates.map((date, index) => (
 					<Details key={index} index={index} date={date.date} event={date.event} time={date.time} />
 				))}
