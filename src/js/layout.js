@@ -26,9 +26,6 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
-                        <Route exact path="/">
-							<Home />
-						</Route>
 						<Route exact path="/">
 							<div className="card-rows">
 								<div>
