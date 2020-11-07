@@ -5,21 +5,19 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
-export const Jumbotron = () => {
+export const NavBar = () => {
 	const [show, setShow] = useState(false);
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
 
 	return (
-		<div className="jumbotron jumbotron fluid bg-dark">
-			<div className="container">
-				<div className="logo">
-					<Link to="/">
-						<img src={rigoImage} className="card-img" alt="..." />
-					</Link>
-				</div>
-				<h1 className="display-4 text-light">Meetup Clone</h1>
-				<p className="lead text-light">This is a mini-project created by 4Geeks Academy.</p>
+		<ul className="nav nav-fill bg-dark">
+			<li className="nav-item">
+				<Link to="/">
+					<img src={rigoImage} className="card-img" alt="..." />
+				</Link>
+			</li>
+			<li className="nav-item justify-content-end">
 				<button type="button" className="btn btn-primary" variant="primary" onClick={handleShow}>
 					Login
 				</button>
@@ -58,7 +56,7 @@ export const Jumbotron = () => {
 						</Button> */}
 					</Modal.Footer>{" "}
 				</Modal>
-			</div>
-		</div>
+			</li>
+		</ul>
 	);
 };

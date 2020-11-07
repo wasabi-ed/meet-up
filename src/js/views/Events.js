@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Details } from "./Details";
+import { Jumbotron } from "../component/Jumbotron";
 
 export function Events() {
 	const [dates, setDates] = useState([
@@ -11,6 +12,7 @@ export function Events() {
 
 	return (
 		<div>
+			<Jumbotron />
 			<div className="row">
 				{dates.map((date, index) => (
 					<Details key={index} index={index} date={date.date} event={date.event} time={date.time} />
