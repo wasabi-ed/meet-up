@@ -11,14 +11,14 @@ export const NavBar = () => {
 	const handleShow = () => setShow(true);
 
 	return (
-		<ul className="nav nav-fill bg-dark">
-			<li className="nav-item">
+		<ul className="navbar bg-dark d-flex">
+			<li className="navbar-brand">
 				<Link to="/">
 					<img src={rigoImage} className="card-img" alt="..." />
 				</Link>
 			</li>
-			<li className="nav-item justify-content-end">
-				<button type="button" className="btn btn-primary" variant="primary" onClick={handleShow}>
+			<li className="nav-item">
+				<button type="button" className="btn btn-primary login-btn" variant="primary" onClick={handleShow}>
 					Login
 				</button>
 				<Modal show={show} onHide={handleClose}>

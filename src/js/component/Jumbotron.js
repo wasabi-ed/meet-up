@@ -11,11 +11,11 @@ export const Jumbotron = () => {
 	const handleShow = () => setShow(true);
 
 	return (
-		<div className="jumbotron text-center jumbotron fluid bg-dark">
+		<div className="jumbotron text-center jumbotron-fluid bg-dark">
 			<div className="container">
 				<div className="logo">
 					<Link to="/">
-						<img src={rigoImage} className="card-img" alt="..." />
+						<img src={rigoImage} className="img-jumbo" alt="..." />
 					</Link>
 				</div>
 				<h1 className="display-4 text-light">Meetup Clone</h1>

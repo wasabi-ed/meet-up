@@ -5,7 +5,13 @@
 
 
 .card-img {
-    width: 10%;
+    width: 40%;
+
+
+}
+.img-jumbo {
+    width: 20%;
+    padding: 10px;
 }
 .card2{
     border: none;
@@ -15,4 +21,17 @@
     display: flex; 
     align-items: center; 
     justify-content: center; 
+}
+
+.navbar-brand {
+    height: 100px;
+    margin: 20px;
+}
+
+.login-btn {
+    margin: 0px;
+
+}
+ul { 
+    list-style-type: none;
 }
