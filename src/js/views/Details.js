@@ -8,7 +8,7 @@ import Group from "./Group";
 
 export function Details(props) {
 	return (
-		<div className="card">
+		<div className="card event-cards">
 			<div className="card-header bg-light text-left">
 				<strong>Date: {props.date}</strong>
 			</div>
