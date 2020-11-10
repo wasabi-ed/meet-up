@@ -11,7 +11,7 @@ export const NavBar = () => {
 	const handleShow = () => setShow(true);
 
 	return (
-		<ul className="navbar bg-dark d-flex">
+		<ul className="navbar bg-dark d-flex nav-menu">
 			<li className="navbar-brand">
 				<Link to="/">
 					<img src={rigoImage} className="card-img" alt="..." />
@@ -47,14 +47,7 @@ export const NavBar = () => {
 							</Button>
 						</Form>
 					</Modal.Body>
-					<Modal.Footer>
-						{/* <Button variant="secondary" onClick={handleClose}>
-							Login
-						</Button> */}
-						{/* <Button variant="primary" onClick={handleClose}>
-							Save Changes
-						</Button> */}
-					</Modal.Footer>{" "}
+					<Modal.Footer />{" "}
 				</Modal>
 			</li>
 		</ul>
