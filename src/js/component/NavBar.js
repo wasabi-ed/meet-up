@@ -12,7 +12,7 @@ export const NavBar = () => {
 
 	return (
 		<ul className="navbar bg-dark d-flex nav-menu">
-			<li className="navbar-brand">
+			<li className="navbar-brand nav-logo">
 				<Link to="/">
 					<img src={rigoImage} className="card-img" alt="..." />
 				</Link>

@@ -3,9 +3,10 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 import { Link } from "react-router-dom";
 import { Details } from "./Details";
+import { SmallEventCard } from "../component/SmallEventCard";
 
 export const More = () => (
-	<div className="card2 m-5">
+	<div className="card card2 m-5 col-md-10">
 		<img className="card2-img-top" src={rigoImage} alt="Card image cap" />
 		<div className="card-body">
 			<h5 className="card-title">Details</h5>
@@ -20,5 +21,6 @@ export const More = () => (
 				<li>Invite your friends!</li>
 			</ul>
 		</div>
+		<SmallEventCard />
 	</div>
 );

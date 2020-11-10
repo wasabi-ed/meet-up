@@ -17,7 +17,9 @@
 }
 .card2{
     border: none;
+    display: flex;
 }
+
 
 .row {
     display: flex; 
@@ -28,11 +30,11 @@
 .navbar{
     margin-bottom: 0;
 }
-.navbar-brand {
+.nav-logo {
     height: 100px;
+    margin-bottom: 12px;
    
 }
-
 
 .nav-menu { 
     list-style-type: none;
