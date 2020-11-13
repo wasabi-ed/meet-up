@@ -3,7 +3,9 @@
     width: 35rem;
 }
 
-
+.jumbotron {
+    margin-top: 0;
+}
 .card-img {
     width: 40%;
 
@@ -15,7 +17,9 @@
 }
 .card2{
     border: none;
+    display: flex;
 }
+
 
 .row {
     display: flex; 
@@ -23,15 +27,19 @@
     justify-content: center; 
 }
 
-.navbar-brand {
+.navbar{
+    margin-bottom: 0;
+}
+.nav-logo {
     height: 100px;
-    margin: 20px;
+    margin-bottom: 12px;
+   
 }
 
-.login-btn {
-    margin: 0px;
-
-}
-ul { 
+.nav-menu { 
     list-style-type: none;
+}
+
+.event-cards {
+    margin: 8px;
 }
