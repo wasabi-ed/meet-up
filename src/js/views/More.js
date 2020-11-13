@@ -2,7 +2,7 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 import { Link } from "react-router-dom";
-import { Details } from "./Details";
+import { Details } from "./DetailsE";
 
 export const More = () => (
 	<div className="card2 m-5">

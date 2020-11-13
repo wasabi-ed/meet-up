@@ -1,42 +1,73 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			demo: [
+			events: [
 				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
+					title: "Halloween",
+					date: "October 31",
+					time: "8:00 pm",
+					id: 1,
+					group: 1
 				},
 				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
+					title: "Thanksgiving",
+					date: "November 26",
+					time: "8:00 pm",
+					id: 2,
+					group: 1
+				},
+				{
+					title: "Christmas",
+					date: "December 25",
+					time: "8:00 pm",
+					id: 3,
+					group: 1
+				},
+				{
+					title: "Graduation",
+					date: "December 18",
+					time: "8:00 pm",
+					id: 4,
+					group: 2
+				},
+				{
+					title: "New Years",
+					date: "December 31",
+					time: "11:00 pm",
+					id: 5,
+					group: 2
+				}
+			],
+			groups: [
+				{
+					name: "Group 1",
+					id: 1,
+					roster: [1, 2, 3]
+				},
+				{
+					name: "Group 2",
+					id: 2,
+					roster: [4, 5]
 				}
 			]
 		},
 		actions: {
-			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
+			getEvents: () => {
+				return getStore().events;
 			},
-			loadSomeData: () => {
-				/**
-					fetch().then().then(data => setStore({ "foo": data.bar }))
-				*/
-			},
-			changeColor: (index, color) => {
-				//get the store
-				const store = getStore();
+			getGroup: id => {
+				const events = getStore().events;
 
-				//we have to loop the entire demo array to look for the respective index
-				//and change its color
-				const demo = store.demo.map((elm, i) => {
-					if (i === index) elm.background = color;
-					return elm;
+				events.forEach(element => {
+					if (id == element.id) {
+						return element;
+					}
 				});
 
-				//reset the global store
-				setStore({ demo: demo });
+				return "Not found";
+			},
+			getGroups: () => {
+				return getStore().groups;
 			}
 		}
 	};
