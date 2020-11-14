@@ -23,7 +23,7 @@ export const NavBar = () => {
 				</button>
 				<Modal show={show} onHide={handleClose}>
 					<Modal.Header closeButton>
-						<Modal.Title>Login</Modal.Title>
+						<Modal.Title>Login Here</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>
 						<Form>
