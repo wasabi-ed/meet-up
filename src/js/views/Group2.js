@@ -1,24 +1,21 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { Details } from "./DetailsE";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 import { Link } from "react-router-dom";
-import { More } from "./More";
 import PropTypes from "prop-types";
-import { Jumbotron2 } from "../component/Jumbotron2";
+import { JumboG2 } from "../component/JumboG2";
+import { Context } from "../store/appContext";
 
 export function Group2() {
-	const [dates, setDates] = useState([
-		{ date: "October 31", time: "8:00 am ", event: "Halloween" },
-		{ date: "November 26", time: "8:00 am ", event: "Thanksgiving" },
-		{ date: "December 25", time: "8:00 am ", event: "Christmas" }
-	]);
+	const { store, actions } = useContext(Context);
 	return (
 		<div>
-			<Jumbotron2 />
+			<JumboG2 />
 			<div className="row col-md-4 m-auto">
-				{dates.map((date, index) => (
-					<Details key={index} index={index} date={date.date} event={date.event} time={date.time} />
+				<p className="text-center">Next Events</p>
+				{store.events.map((events, index) => (
+					<Details key={index} events={events} />
 				))}
 			</div>
 		</div>

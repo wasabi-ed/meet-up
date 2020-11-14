@@ -9,7 +9,7 @@ import injectContext from "./store/appContext";
 import { More } from "./views/More";
 import { Jumbotron } from "./component/Jumbotron";
 import { Jumbotron2 } from "./component/Jumbotron2";
-import { Jum2D } from "./component/Jum2D";
+import { Jum2D } from "./component/JumboG1";
 
 import { NavBar } from "./component/NavBar";
 import { Footer } from "./component/footer";
@@ -36,8 +36,11 @@ const Layout = () => {
 								</div>
 							</div>
 						</Route>
-						<Route exact path="/group/:id">
+						<Route exact path="/group/1">
 							<Group1 />
+						</Route>
+						<Route exact path="/group/2">
+							<Group2 />
 						</Route>
 						<Route exact path="/more/:id">
 							<More />

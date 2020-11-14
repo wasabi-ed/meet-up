@@ -26,7 +26,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				{
 					title: "Graduation",
 					date: "December 18",
-					time: "8:00 pm",
+					time: "7:30 pm",
 					id: 4,
 					group: 2
 				},
@@ -56,15 +56,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 				return getStore().events;
 			},
 			getGroup: id => {
-				const events = getStore().events;
-
-				events.forEach(element => {
+				const groups = getStore().groups;
+				let temp = "not found";
+				groups.forEach(element => {
 					if (id == element.id) {
-						return element;
+						temp = element;
 					}
 				});
-
-				return "Not found";
+				return temp;
 			},
 			getGroups: () => {
 				return getStore().groups;

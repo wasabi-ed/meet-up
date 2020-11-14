@@ -11,8 +11,7 @@ export function Details(props) {
 	const { store, actions } = useContext(Context);
 	let params = useParams();
 
-	let groups = actions.getGroups();
-
+	let group = actions.getGroup(props.events.group);
 	return (
 		<div className="card">
 			<div className="card-header bg-light text-left">
@@ -32,9 +31,9 @@ export function Details(props) {
 					<p>
 						<Link
 							to={{
-								pathname: "/group/" + props.events.id
+								pathname: "/group/" + group.id
 							}}>
-							{groups[props.events.group - 1].name}
+							{group.name}
 						</Link>
 					</p>
 				</li>
