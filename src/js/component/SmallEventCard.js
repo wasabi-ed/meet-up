@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 // import { Details } from "./Details";
 
 export const SmallEventCard = () => (
-	<div className="card3 m-5 col-md-2">
-		<div className="card">
-			<div clasName="card-body">This is some text within a card body.</div>
+	<div className="card card3 m-5 col-6">
+		<div clasName="card-body">
+			<i className="fas fa-clock" /> Saturday, Oct. 31st 2021
+			<p>9:00 p.m.</p>
+			<p>One night only!</p>
 		</div>
 	</div>
 );
