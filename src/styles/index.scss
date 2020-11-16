@@ -1,6 +1,7 @@
 @import "~bootstrap/scss/bootstrap.scss";
 .card{
     width: 35rem;
+    margin-top: 20px;
 }
 
 .card3{
@@ -52,4 +53,8 @@
   position: absolute;
   top: 12px;
   right: 10px;
+}
+
+.event-cards{
+    margin-top: 8px;
 }
