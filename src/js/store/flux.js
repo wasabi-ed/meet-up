@@ -84,6 +84,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 				});
 				return temp;
 			},
+			getTitle: id => {
+				const title = getStore().events;
+				let temp = "not found";
+				title.forEach(element => {
+					if (id == element.id) {
+						temp = element;
+					}
+				});
+				return temp;
+			},
 			getContent: id => {
 				const content = getStore().events;
 				let temp = "not found";
