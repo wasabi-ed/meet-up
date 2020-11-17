@@ -9,7 +9,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 					id: 1,
 					group: 1,
 					content:
-						"I think we all know how Halloween works. We will all gather at the local watering hole for some intense pre gaming. Afterwards, we will hit the town for some costume shenanigans!"
+						"I think we all know how Halloween works. We will all gather at the local watering hole for some intense pre gaming. Afterwards, we will hit the town for some costume shenanigans!",
+					content2: "can",
+					content3: "you",
+					content4: "dig it?"
 				},
 				{
 					title: "Thanksgiving",
