@@ -4,7 +4,7 @@ import ScrollToTop from "./component/scrollToTop";
 
 // import { Home } from "./views/home";
 import { Demo } from "./views/demo";
-import { Single } from "./views/single";
+import { ECDetails } from "./views/ECDetails";
 import injectContext from "./store/appContext";
 import { More } from "./views/More";
 import { Jumbotron } from "./component/Jumbotron";
@@ -43,7 +43,7 @@ const Layout = () => {
 							<Group2 />
 						</Route>
 						<Route exact path="/more/:id">
-							<More />
+							<ECDetails />
 						</Route>
 					</Switch>
 					<Footer />

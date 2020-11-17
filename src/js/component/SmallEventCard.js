@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
-import { Link } from "react-router-dom";
-// import { Details } from "./Details";
+import { PropTypes } from "prop-types";
+import { Context } from "../store/appContext";
+import { useParams } from "react-router-dom";
 
-export const SmallEventCard = () => (
-	<div className="card card3 m-5 col-6">
-		<div clasName="card-body">
-			<i className="fas fa-clock" /> Saturday, Oct. 31st 2021
-			<p>9:00 p.m.</p>
-			<p>One night only!</p>
+export function SmallEventCard(props) {
+	const { store, actions } = useContext(Context);
+	let params = useParams();
+	let date = actions.getDate(params.id);
+	return (
+		<div className="card card3 m-5 col-6">
+			<div clasName="card-body">
+				<i className="fas fa-clock" /> {date.date}
+				<p>{date.time}</p>
+				<p>One night only!</p>
+			</div>
 		</div>
-	</div>
-);
+	);
+}
+SmallEventCard.propTypes = {
+	events: PropTypes.object,
+	groups: PropTypes.object
+};

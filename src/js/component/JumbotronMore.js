@@ -30,8 +30,8 @@ export function JumbotronMore(props) {
 									Login to RSVP
 								</a>
 								<p className="card-text">
-									<i className="fab fa-facebook-square icon"></i>
-									<i className="fab fa-twitter icon"></i>
+									<i className="fab fa-facebook-square icon" />
+									<i className="fab fa-twitter icon" />
 								</p>
 							</div>
 						</div>
