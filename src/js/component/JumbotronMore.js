@@ -1,17 +1,16 @@
 import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
 import "../../styles/home.scss";
 import rigoImage from "../../img/rigo-baby.jpg";
 import { PropTypes } from "prop-types";
 import { Context } from "../store/appContext";
-import { useParams } from "react-router-dom";
+import { Link, useParams, useLocation } from "react-router-dom";
 
 export function JumbotronMore(props) {
 	const { store, actions } = useContext(Context);
 	let params = useParams();
 	let date = actions.getDate(params.id);
 	let title = actions.getTitle(params.id);
-	// let group = actions.getGroup(props.events.group);
+	let group = actions.getGroup(params.id);
 
 	return (
 		<div>
@@ -22,14 +21,14 @@ export function JumbotronMore(props) {
 							<div className="card-body">
 								<p className="card-text">{date.date}</p>
 								<h5 className="card-title">{title.title}</h5>
-								{/* <p>
+								<p>
 									<Link
 										to={{
 											pathname: "/group/" + group.id
 										}}>
 										{group.name}
 									</Link>
-								</p> */}
+								</p>
 							</div>
 						</div>
 					</div>
