@@ -17,7 +17,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					time: "9:00 pm",
 					id: 2,
 					group: 1,
-					content: "testing 2"
+					content: "Join us for a huge Thanksgiving dinner!"
 				},
 				{
 					title: "Christmas",
@@ -25,7 +25,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					time: "8:00 pm",
 					id: 3,
 					group: 1,
-					content: "testing 3"
+					content: "Ugly Sweater Christmas Party!"
 				},
 				{
 					title: "Graduation",
@@ -33,7 +33,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					time: "7:30 pm",
 					id: 4,
 					group: 2,
-					content: "testing 4"
+					content: "Celebrate four years of hard work!"
 				},
 				{
 					title: "New Years",
@@ -41,7 +41,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					time: "11:00 pm",
 					id: 5,
 					group: 2,
-					content: "testing 5"
+					content: "Ring in the new year!"
 				}
 			],
 			groups: [
