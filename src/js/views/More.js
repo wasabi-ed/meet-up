@@ -23,9 +23,9 @@ export function More(props) {
 						<p className="card-text">{content.content}</p>
 						<p>A few reminders for this event:</p>
 						<ul>
-							<li>Wear a cool costume.</li>
-							<li>Bring lots of candy.</li>
-							<li>Invite your friends!</li>
+							<li>{content.content2}</li>
+							<li>{content.content3}</li>
+							<li>{content.content4}</li>
 						</ul>
 					</div>
 				</div>
