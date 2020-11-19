@@ -64,10 +64,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 			getEvents: () => {
 				return getStore().events;
 			},
-			getGroup: id => {
-				const groups = getStore().groups;
+
+			getEvent: id => {
+				const event = getStore().events;
 				let temp = "not found";
-				groups.forEach(element => {
+				event.forEach(element => {
+					if (id == element.id) {
+						temp = element;
+					}
+				});
+				return temp;
+			},
+
+			getGroup: id => {
+				const group = getStore().groups;
+				let temp = "not found";
+				group.forEach(element => {
 					if (id == element.id) {
 						temp = element;
 					}

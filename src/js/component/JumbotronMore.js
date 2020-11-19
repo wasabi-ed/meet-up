@@ -11,6 +11,7 @@ export function JumbotronMore(props) {
 	let date = actions.getDate(params.id);
 	let title = actions.getTitle(params.id);
 	let group = actions.getGroup(params.id);
+	let event = actions.getEvent(params.id);
 
 	return (
 		<div>
@@ -24,9 +25,9 @@ export function JumbotronMore(props) {
 								<p>
 									<Link
 										to={{
-											pathname: "/group/" + group.id
+											pathname: "/group/" + event.group
 										}}>
-										{group.name}
+										Group {event.group}
 									</Link>
 								</p>
 							</div>
