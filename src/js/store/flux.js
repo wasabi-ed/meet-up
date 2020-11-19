@@ -20,7 +20,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 					time: "9:00 pm",
 					id: 2,
 					group: 1,
-					content: "Join us for a huge Thanksgiving dinner!"
+					content: "Join us for a huge Thanksgiving dinner!",
+					content2: "Bring your friends!",
+					content3: "Best costume wins!",
+					content4: "Don't forget to bring a bag of candy!"
 				},
 				{
 					title: "Christmas",
@@ -28,7 +31,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 					time: "8:00 pm",
 					id: 3,
 					group: 1,
-					content: "Ugly Sweater Christmas Party!"
+					content: "Ugly Sweater Christmas Party!",
+					content2: "Ugliest sweater wins 5 Apple Pies!",
+					content3: "BYOB",
+					content4: "Bring your friends!"
 				},
 				{
 					title: "Graduation",
@@ -36,7 +42,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 					time: "7:30 pm",
 					id: 4,
 					group: 2,
-					content: "Celebrate four years of hard work!"
+					content: "Celebrate four years of hard work!",
+					content2: "Refreshments to follow!",
+					content3: "Yearbook signing from 9-10 pm",
+					content4: "Pick up your class rings!"
 				},
 				{
 					title: "New Years",
@@ -44,7 +53,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 					time: "11:00 pm",
 					id: 5,
 					group: 2,
-					content: "Ring in the new year!"
+					content: "Ring in the new year!",
+					content2: "Everyone bring a bottle of bubbly!",
+					content3: "Professional photographer from 11 pm - 1 am",
+					content4: "Live DJ Spinning the best of the last decade!"
 				}
 			],
 			groups: [
