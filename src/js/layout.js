@@ -36,12 +36,12 @@ const Layout = () => {
 								</div>
 							</div>
 						</Route>
-						<Route exact path="/group/1">
+						<Route exact path="/group/:id">
 							<Group1 />
 						</Route>
-						<Route exact path="/group/2">
+						{/* <Route exact path="/group/:id">
 							<Group2 />
-						</Route>
+						</Route> */}
 						<Route exact path="/more/:id">
 							<ECDetails />
 						</Route>
