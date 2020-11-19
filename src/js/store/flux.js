@@ -10,9 +10,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					group: 1,
 					content:
 						"I think we all know how Halloween works. We will all gather at the local watering hole for some intense pre gaming. Afterwards, we will hit the town for some costume shenanigans!",
-					content2: "can",
-					content3: "you",
-					content4: "dig it?"
+					content2: "Bring your friends!",
+					content3: "Best costume wins!",
+					content4: "Don't forget to bring a bag of candy!"
 				},
 				{
 					title: "Thanksgiving",
@@ -22,8 +22,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					group: 1,
 					content: "Join us for a huge Thanksgiving dinner!",
 					content2: "Bring your friends!",
-					content3: "Best costume wins!",
-					content4: "Don't forget to bring a bag of candy!"
+					content3: "Best bring a side dish to share!",
+					content4: "Free hayrides before dinner!"
 				},
 				{
 					title: "Christmas",
