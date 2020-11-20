@@ -16,7 +16,6 @@ import { Footer } from "./component/footer";
 import { Details } from "./views/DetailsE";
 import { Events } from "./views/Events";
 import { Group1 } from "./views/Group1";
-import { Group2 } from "./views/Group2";
 //create your first component
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -39,9 +38,6 @@ const Layout = () => {
 						<Route exact path="/group/:id">
 							<Group1 />
 						</Route>
-						{/* <Route exact path="/group/:id">
-							<Group2 />
-						</Route> */}
 						<Route exact path="/more/:id">
 							<ECDetails />
 						</Route>
