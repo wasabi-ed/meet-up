@@ -51,12 +51,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 				{
 					name: "Group 1",
 					id: 1,
-					roster: [1, 2, 3]
+					roster: [1, 2, 3],
+					location: "Miami, FL"
 				},
 				{
 					name: "Group 2",
 					id: 2,
-					roster: [4, 5]
+					roster: [4, 5],
+					location: "New York, NY"
 				}
 			]
 		},
@@ -110,6 +112,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const content = getStore().events;
 				let temp = "not found";
 				content.forEach(element => {
+					if (id == element.id) {
+						temp = element;
+					}
+				});
+				return temp;
+			},
+			getLocation: id => {
+				const location = getStore().groups;
+				let temp = "not found";
+				location.forEach(element => {
 					if (id == element.id) {
 						temp = element;
 					}
