@@ -19,7 +19,7 @@ export const Jumbotron = () => {
 					</Link>
 				</div>
 				<h1 className="display-4 text-light">Meetup Clone</h1>
-				<p className="lead text-light">This is a mini-project created by 4Geeks Academy.</p>
+				<p className="lead text-light">This is a mini-project created by Catherine, David, and Edward.</p>
 			</div>
 		</div>
 	);

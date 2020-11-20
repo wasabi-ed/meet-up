@@ -2,13 +2,11 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-// import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { ECDetails } from "./views/ECDetails";
 import injectContext from "./store/appContext";
 import { More } from "./views/More";
 import { Jumbotron } from "./component/Jumbotron";
-import { Jumbotron2 } from "./component/Jumbotron2";
 import { Jum2D } from "./component/JumboG1";
 
 import { NavBar } from "./component/NavBar";
